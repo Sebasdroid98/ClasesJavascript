@@ -1,0 +1,91 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.w-20 {
+    width: 20%;
+    min-width: 100px;
+}
+
+.w-45 {
+    width: 45%;
+    min-width: 200px;
+}
+
+.w-75 {
+    width: 75%;
+    min-width: 100px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-25 {
+    height: 25%;
+}
+
+.h-50 {
+    height: 50%;
+}
+
+.h-75 {
+    height: 75%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.form-group {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+}
+
+
+
+
+
+#contenido {
+    padding-left: 100px;
+    padding-right: 100px;
+    justify-content: space-between;
+}
+
+#contenido .seccion {
+    border: 1px solid black;
+    background: papayawhip;
+}
+
+.seccion-rutas {
+    width: 200px;
+    height: 250px;
+}
+
+.seccion-buses {
+    width: 200px;
+    height: 250px;
+}
+
+.seccion-viajes {
+    width: 800px;
+    height: 320px;
+}
+
+#lista-viajes {
+    overflow-y: scroll;
+    max-height: 230px;
+}
+
+/* VIAJES */
+#div-form-viaje {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(255, 255, 255, .5);
+}

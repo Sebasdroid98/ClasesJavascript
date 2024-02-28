@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 1 - Autobuses</title>
+    <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+    <div id="contenido" class="row">
+        <div class="seccion seccion-rutas">
+            <h3>Rutas disponibles</h3>
+            <ul id="lista-rutas"></ul>
+        </div>
+        <div class="seccion seccion-buses">
+            <h3>Autobuses disponibles</h3>
+            <ul id="lista-autobuses"></ul>
+        </div>
+        <div class="seccion seccion-viajes">
+            <div class="row">
+                <div class="w-45">
+                    <h3>Viajes registrados</h3>
+                    <ul id="lista-viajes"></ul>
+                </div>
+                <div class="w-50 h-100" id="div-form-viaje">
+                    <h3>Registrar Viaje</h3>
+                    <form action="#" method="post" id="form-viaje" onsubmit="registrarViaje(this, event)">
+                        <div class="form-group">
+                            <label for="codigo">Código viaje</label>
+                            <input id="codigo" class="form-control" type="text" maxlength="7" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="rutaId">Ruta</label>
+                            <select id="rutaId" required></select>
+                        </div>
+                        <div class="form-group">
+                            <label for="busId">Autobus</label>
+                            <select id="busId" required></select>
+                        </div>
+                        <div class="form-group">
+                            <label for="horaSalida">Hora salida</label>
+                            <input id="horaSalida" class="form-control" type="time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="horaLlegada">Hora Llegada</label>
+                            <input id="horaLlegada" class="form-control" type="time" required>
+                        </div>
+                        <div>
+                            <button type="submit" id="btn-nuevo-viaje">Guardar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scripts JS -->
+    <script src="assets/js/clases-JS/AutoBus.js"></script>
+    <script src="assets/js/clases-JS/Ruta.js"></script>
+    <script src="assets/js/clases-JS/Asiento.js"></script>
+    <script src="assets/js/clases-JS/Tiquete.js"></script>
+    <script src="assets/js/clases-JS/Viaje.js"></script>
+    <script src="assets/js/clases-JS/AsientoViaje.js"></script>
+    <script src="assets/js/procesos-JS/catalogos.js"></script>
+    <script src="assets/js/procesos-JS/main.js"></script>
+</body>
+</html>
